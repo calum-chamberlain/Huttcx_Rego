@@ -15,6 +15,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".MemberSignOn"
+            android:label="@string/title_activity_member_sign_on"
+            android:parentActivityName=".Sign_on"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.huttcross.registration.Sign_on" />
+        </activity>
+        <activity
+            android:name=".NonMemberSignOn"
+            android:label="@string/title_activity_non_member_sign_on"
+            android:parentActivityName=".Sign_on"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.huttcross.registration.Sign_on" />
+        </activity>
     </application>
 
 </manifest>
