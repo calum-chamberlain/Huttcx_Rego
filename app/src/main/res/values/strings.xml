@@ -13,6 +13,7 @@
     <string name="emergency_contact">Emergency Contact Name</string>
     <string name="emergency_contact_no">Emergency Contact Number</string>
     <string name="tester">Test String</string>
+    <string name="spinner_title">Race Grade</string>
     <string-array name="Race_grades">
         <item>A</item>
         <item>B</item>
