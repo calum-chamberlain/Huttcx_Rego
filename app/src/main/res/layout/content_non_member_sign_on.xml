@@ -60,5 +60,12 @@
         android:prompt="@string/spinner_title"
         android:entries="@array/Race_grades"/>
 
+    <Button android:id="@+id/sign_on"
+        android:layout_below="@id/grade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign-on"
+        android:onClick="signOn" />
+
 
 </RelativeLayout>
