@@ -4,7 +4,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.content.Intent;
 import android.view.View;
-import android.widget.EditText;
 
 public class Sign_on extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.huttcross.registration.MESSAGE";

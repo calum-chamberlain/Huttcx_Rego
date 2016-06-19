@@ -12,24 +12,24 @@
     tools:context="com.huttcross.registration.MemberSignOn"
     tools:showIn="@layout/activity_member_sign_on">
 
-    <EditText android:id="@+id/first_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/first_name"
-        android:inputType="textCapWords"/>
+    <!--<EditText android:id="@+id/first_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/first_name"-->
+        <!--android:inputType="textCapWords"/>-->
 
-    <EditText android:id="@+id/last_name"
-        android:layout_below="@id/first_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/last_name"
-        android:inputType="textCapWords"/>
+    <!--<EditText android:id="@+id/last_name"-->
+        <!--android:layout_below="@id/first_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:hint="@string/last_name"-->
+        <!--android:inputType="textCapWords"/>-->
 
-    <Button android:id="@+id/lookup"
-        android:layout_below="@id/last_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="Find Me!"
-        android:onClick="memberLookup"/>
+    <!--<Button android:id="@+id/lookup"-->
+        <!--android:layout_below="@id/last_name"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:text="Find Me!"-->
+        <!--android:onClick="memberLookup"/>-->
 
 </RelativeLayout>

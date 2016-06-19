@@ -1,11 +1,13 @@
 package com.huttcross.registration;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import com.huttcross.registration.RegisteredRiders;
 
 public class NonMemberSignOn extends AppCompatActivity {
 
@@ -25,6 +27,12 @@ public class NonMemberSignOn extends AppCompatActivity {
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+    }
+
+    public void putRacer(View view) {
+        // Put racers details into the database /
+        final SignedOn tb = new SignedOn(this);
+        dh.addRacer();
     }
 
 }
