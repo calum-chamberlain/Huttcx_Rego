@@ -27,4 +27,11 @@ public class Sign_on extends AppCompatActivity {
         Intent intent = new Intent(this, NonMemberSignOn.class);
         startActivity(intent);
     }
+
+    /** Called when someone clicks the Admin button */
+    public void adminUsage(View view) {
+        // Open the Admin view, used for exporting grades and setting paths
+        Intent intent = new Intent(this, AdminUsage.class);
+        startActivity(intent);
+    }
 }

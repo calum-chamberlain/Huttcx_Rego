@@ -21,4 +21,5 @@
         <item>C</item>
         <item>Kids</item>
     </string-array>
+    <string name="title_activity_admin_usage">AdminUsage</string>
 </resources>

@@ -33,6 +33,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.huttcross.registration.Sign_on" />
         </activity>
+        <activity
+            android:name=".AdminUsage"
+            android:label="@string/title_activity_admin_usage"
+            android:parentActivityName=".Sign_on"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.huttcross.registration.Sign_on" />
+        </activity>
     </application>
 
 </manifest>
