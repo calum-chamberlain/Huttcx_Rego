@@ -7,9 +7,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.View;
+import android.widget.EditText;
+
 import com.huttcross.registration.RegisteredRiders;
 
 public class NonMemberSignOn extends AppCompatActivity {
+
+    private static final String FIRST_NAME = "com.huttcross.registration.FIRST_NAME";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,22 +21,16 @@ public class NonMemberSignOn extends AppCompatActivity {
         setContentView(R.layout.activity_non_member_sign_on);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     public void putRacer(View view) {
         // Put racers details into the database /
-        final SignedOn tb = new SignedOn(this);
-        dh.addRacer();
+        Intent intent = new Intent(this, RegisteredRiders.class);
+        EditText editText = (EditText) findViewById(R.id.first_name);
+        String firstname = editText.getText().toString();
+        intent.putExtra(FIRST_NAME, firstname);
+        startActivity(intent);
     }
 
 }

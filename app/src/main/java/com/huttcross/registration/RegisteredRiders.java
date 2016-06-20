@@ -15,7 +15,7 @@ public class RegisteredRiders extends SQLiteOpenHelper {
     private static final String DATABASE_NAME="SignedOn";
 
     public RegisteredRiders(Context context) {
-        super(context, DATABASE_NAME, null, 1)
+        super(context, DATABASE_NAME, null, 1);
     }
 
     @Override
@@ -37,12 +37,12 @@ public class RegisteredRiders extends SQLiteOpenHelper {
         ContentValues values=new ContentValues(7);
         values.put("firstname", firstname);
         values.put("surname", surname);
-        values.put("dateofbirth", dateofbirth);
+        values.put("dateofbirth", String.valueOf(dateofbirth));
         values.put("emergencyname", emergencyname);
         values.put("emergencyphonenumber", emergencyphonenumber);
         values.put("racenumber", racenumber);
         values.put("grade", grade);
 
-        getWritableDatabase().insert("racers", "firstname", values)
+        getWritableDatabase().insert("racers", "firstname", values);
     }
 }

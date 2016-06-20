@@ -15,36 +15,47 @@
     <Button android:id="@+id/export_a"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:onClick="exportA"
         android:text="Export A"/>
 
     <Button android:id="@+id/export_b"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/export_a"
+        android:onClick="exportB"
         android:text="Export B"/>
 
     <Button android:id="@+id/export_c"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/export_b"
+        android:onClick="exportC"
         android:text="Export C"/>
 
     <Button android:id="@+id/export_kids"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/export_c"
+        android:onClick="exportKids"
         android:text="Export Kids"/>
 
     <EditText android:id="@+id/input_path"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/export_kids"
-        android:hint="Input Path"/>
+        android:hint="This should show the current input path"/>
 
     <EditText android:id="@+id/output_path"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@id/input_path"
-        android:hint="Output Path"/>
+        android:hint="This should show the current output path"/>
+
+    <Button android:id="@+id/refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/output_path"
+        android:onClick="updateDb"
+        android:text="Reload Database"/>
 
 </RelativeLayout>
